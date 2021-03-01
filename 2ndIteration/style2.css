@@ -1,16 +1,36 @@
 * {
-	border: black 1px solid;
-	margin: 0;
-	box-sizing: border-box;
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	/* border: black 1px solid; */
+	margin: 0; /*if i take this off everything gets messed up, why?*/
+	
+
 }
 
+body {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	box-sizing: border-box;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*if i put this in the * area i can't change the font. why is that? does it have to do with scope? */
+
+}
 main {
 	background-color: lightgrey;
 	display: flex;
 	width: 300px;
 	height: 200px;
+	justify-self: center;
 }
+
+aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	/*why can't i put align-content: center here and have it work? i had to put align-self in the next rule set */
+}
+
+aside > input, button {
+	width: 60%;
+	align-self: center;
+} 
 
 .name-tag {
 	background-color: red; 
@@ -41,8 +61,29 @@ main {
 	background-color: white;;
 	justify-content: center;
 }
-.signature {
+#signature {
 	font-size: 2em;
 	font-style: italic;
 	font-family: 'Dancing Script', cursive;
+}
+
+#pink {
+	background-color: pink;
+}
+
+#lightgreen {
+	background-color: lightseagreen;
+}
+
+#lightblue {
+	background-color: lightskyblue;
+}
+.colors-wrapper {
+	display: inline-flex;
+	justify-content: space-around;
+}
+
+.color {
+	width: 20%;
+	height: 50px;
 }

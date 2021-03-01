@@ -11,15 +11,43 @@
 </head>
 <body>
 	<main>
-		<div class="name-tag">
-			<span class="hello">Hello</span>
-			<span class="nameIs">my name is</span>
-			<span class="signature-wrapper">
-				<p class="signature">Daniella Marks</p>
-				<p class="pronoun">she/her</p>
-
+		<div id="name-tag-color" class="name-tag">
+		<span class="hello">Hello</span>
+		<span class="nameIs">my name is</span>
+		<span class="signature-wrapper">
+			<p id="signature">Daniella Marks</p>
+			<p id="pronoun">she/her</p>
 		</div>
 	</main>
+	<aside>
+		<input id="input-1" placeholder="your name here">
+		<input id="input-2" placeholder="your pronoun here">
+		<button id="change-all">Change</button>
+		<div class = "colors-wrapper">
+			<button class="color" id="pink"></button>
+			<button class="color" id="lightgreen"></button>
+			<button class="color" id="lightblue"></button>
+		</div>	
+		<div>
+			Choose a font: 
+			<select id="input-font" class="input" onchange="changeFontStyle (this);">  
+				<!-- I'm using this and onchange don't understand these -->
+
+				<option value="Times New Roman" selected="selected"></option>
+				<option value="Arial">Arial</option>
+				<option value="fantasy">Fantasy</option>
+				<option value="Verdana">Verdana</option>
+				<option value="Gill Sans">Gill Sans</option>
+
+			
+			</select>
+		</div>
+		<div>
+			You've changed the name <span id="displayCount">0</span> times. 
+		</div>
+	</aside>
+
+	
 
 	<script src="app2.js"></script>
 </body>
