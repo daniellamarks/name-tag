@@ -1,0 +1,48 @@
+* {
+	border: black 1px solid;
+	margin: 0;
+	box-sizing: border-box;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+	background-color: lightgrey;
+	display: flex;
+	width: 300px;
+	height: 200px;
+}
+
+.name-tag {
+	background-color: red; 
+	display: grid;
+	grid-template-rows: 2fr 1fr 2fr 1fr;
+	text-align: center;
+	border-radius: 1em;
+	margin: .25em;
+	width: 100%;
+}
+
+.hello {
+	font-size: 3em;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 900;
+ }
+
+.nameIs {
+	color: white;
+	align-self: center;
+
+}
+
+.signature-wrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: white;;
+	justify-content: center;
+}
+.signature {
+	font-size: 2em;
+	font-style: italic;
+	font-family: 'Dancing Script', cursive;
+}

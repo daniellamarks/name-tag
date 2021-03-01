@@ -1,0 +1,51 @@
+main {
+    height: 200px;
+    width: 300px;
+    margin: auto;
+    padding: 3px;
+    background-color: #e2e2e2;
+}
+
+.name-tag {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 25% 20% 1fr 15%;
+    margin: 0;
+    background: red;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.greeting {
+    line-height: 0.9;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.label {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    color: black;
+    font-family: cursive;
+}
+
+#name {
+    font-size: 30px;
+    line-height: 1.75;
+}
+
+#pronouns {
+    font-size: 14px;
+    line-height: 1;
+}
