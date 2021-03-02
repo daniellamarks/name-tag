@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    /*border: 1px red dotted;*/
+}
+
+aside {
+    background-color: rgb(223, 235, 236);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    display: block;
+    font-family: Arial, sans-serif;
+    background: yellowgreen;
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+header h1 {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+}
+
+footer {
+    background: yellowgreen;
+    font-family: Arial;
+}
+
+/*.centered {
+    text-align: center;
+}*/
+
+.gray-box {
+    background-color: #ececec;
+    width: 400px;
+    margin: auto;
+    padding: 5px;
+}
+
+.whole-tag {
+    border-radius: 15px;
+    text-align: center;
+}
+
+.hello {
+    background: red;
+    margin: 0px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: white;
+}
+
+.hello p {
+    text-transform: uppercase;
+    font-size: 80px;
+    font-family: "Tahoma", sans-serif;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.my-name-is p {
+    background: red;
+    margin: 0;
+    padding-top: 10;
+    padding-bottom: 30;
+    color: white;
+    font-family: "Arial";
+    font-size: 35px;
+}
+
+.name p {
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    font-family: "Pacifico";
+    font-size: 25px;
+}
+
+.bottom {
+    background: red;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.centered {
+    text-align: center;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pronoun-display {
+    background-color: white;
+    font-family: "Pacifico", "Comic Sans";
+    font-size: 15px;
+}

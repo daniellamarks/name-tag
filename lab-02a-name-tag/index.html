@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Name Tag</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="http://fonts.googleapis.com/css?family=Pacifico"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+    <body>
+        <header id="main-header">
+            <h1>Make Your Own Name Tag</h1>
+        </header>
+        <main>
+            <aside id="sidebar">
+                <p class="centered">
+                    <label>
+                        Your Name:
+                        <input id="name-input" />
+                    </label>
+                    <br />
+                    <!--<button id="name-change-button">Change It</button>-->
+                    <br />
+                    <label>
+                        Preferred Pronoun:
+                        <input id="pronoun-input" />
+                    </label>
+                    <br />
+                    <!--<button id="pronoun-change-button">Change It</button>-->
+                    <button id="change-all-button">Change All</button>
+                </p>
+            </aside>
+
+            <div class="gray-box">
+                <div class="whole-tag">
+                    <div class="hello">
+                        <p>hello</p>
+                    </div>
+                    <div class="my-name-is">
+                        <p>my name is</p>
+                    </div>
+                    <div class="name">
+                        <p id="name-display">Daniella Marks</p>
+                        <p id="pronoun-display">(she/her)</p>
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2021 d. marks</p>
+        </footer>
+
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
